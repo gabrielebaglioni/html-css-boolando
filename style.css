@@ -1,0 +1,159 @@
+/* Reset */
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Roboto', sans-serif;
+}
+
+/*-------------
+   Debug Zone
+--------------*/
+.debug .container{
+   background-color: gray;
+}
+
+.debug .col{
+   background-color: aqua;
+   min-height: 500px;
+}
+
+/*-------------
+   /Debug Zone
+--------------*/
+
+/*---------------------- 
+   Common proprieties 
+-----------------------*/
+
+.container{
+   max-width: 1280px;
+   margin: 0px auto;
+}
+
+img{
+   display: block;
+}
+
+h5{
+   font-weight: 400;
+}
+
+h3{
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+/*---------------------- 
+   /Common proprieties 
+-----------------------*/
+
+/*------------------------------------
+    Structure of a row that repeats
+-------------------------------------*/
+.row{
+   margin: 10px 0px 10px 0px;
+}
+
+.row.clearfix::after{
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.col{
+   width: calc(100%/3 - 8px);
+   float: left;
+   margin: 10px 4px 10px 4px;
+}
+
+/*------------------------------------
+    Structure of a row that repeats
+-------------------------------------*/
+
+/*------------------------------------
+    Structure of a box that repeats
+-------------------------------------*/
+
+.pic-in-col{
+   position: relative;
+}
+
+.pic-in-col > img{
+   width: 100%;
+}
+
+.like{
+   background-color: white;
+   width: 50px;
+   height: 50px;
+   font-size: 30px;
+   text-align: center;
+   line-height: 50px;
+   position: absolute;
+   top: 20px;
+   left: calc(100% - 50px);
+}
+
+.label{
+   position: absolute;
+   bottom: 20px;
+   left: 0px;
+
+}
+
+.tag{
+   display: inline-block;
+   color: white;
+   font-size: 16px;
+   font-weight: bold;
+   padding: 6px;
+}
+
+.tag-discount{
+   background-color: #eb0037;
+}
+
+.tag-eco{
+   background-color: #00875a;
+}
+
+.price{
+   color: red;
+   font-weight: bold;
+}
+.price > span{
+   font-weight: 400;
+   text-decoration: line-through;
+   color: black;
+   
+}
+
+/*------------------------------------
+   /Structure of a box that repeats
+-------------------------------------*/
+
+
+/*-------------- 
+   Animation 
+----------------*/
+
+.fade{
+   display: none;
+}
+
+.pic-in-col:hover img{
+   display: none;
+}
+
+.pic-in-col:hover .fade{
+   display: block;
+}
+
+.pic-in-col:hover .like{
+   color: red;
+}
