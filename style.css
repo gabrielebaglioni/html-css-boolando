@@ -1,4 +1,4 @@
-/* Reset */
+
 
 *{
    margin: 0px;
@@ -10,25 +10,16 @@ body{
    font-family: 'Roboto', sans-serif;
 }
 
-/*-------------
-   Debug Zone
---------------*/
+
 .debug .container{
    background-color: gray;
 }
 
-.debug .col{
+.debug .colonna{
    background-color: aqua;
    min-height: 500px;
 }
 
-/*-------------
-   /Debug Zone
---------------*/
-
-/*---------------------- 
-   Common proprieties 
------------------------*/
 
 .container{
    max-width: 1280px;
@@ -48,36 +39,21 @@ h3{
    font-weight: bold;
 }
 
-/*---------------------- 
-   /Common proprieties 
------------------------*/
-
-/*------------------------------------
-    Structure of a row that repeats
--------------------------------------*/
-.row{
+.tiga{
    margin: 10px 0px 10px 0px;
 }
 
-.row.clearfix::after{
+.riga.clearfix::after{
    content: "";
    display: table;
    clear: both;
 }
 
-.col{
+.colonna{
    width: calc(100%/3 - 8px);
    float: left;
    margin: 10px 4px 10px 4px;
 }
-
-/*------------------------------------
-    Structure of a row that repeats
--------------------------------------*/
-
-/*------------------------------------
-    Structure of a box that repeats
--------------------------------------*/
 
 .pic-in-col{
    position: relative;
@@ -99,7 +75,7 @@ h3{
    left: calc(100% - 50px);
 }
 
-.label{
+.cover{
    position: absolute;
    bottom: 20px;
    left: 0px;
@@ -114,7 +90,7 @@ h3{
    padding: 6px;
 }
 
-.tag-discount{
+.tag-sconto{
    background-color: #eb0037;
 }
 
@@ -122,11 +98,11 @@ h3{
    background-color: #00875a;
 }
 
-.price{
+.prezzo{
    color: red;
    font-weight: bold;
 }
-.price > span{
+.prezzo > span{
    font-weight: 400;
    text-decoration: line-through;
    color: black;
@@ -142,7 +118,7 @@ h3{
    Animation 
 ----------------*/
 
-.fade{
+.ombra{
    display: none;
 }
 
